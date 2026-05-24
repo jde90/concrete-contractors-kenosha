@@ -1,0 +1,7 @@
+# Strip .html from URLs
+/services/:slug.html  /services/:slug  301
+/locations/:slug.html /locations/:slug 301
+/:page.html           /:page           301
+
+# www → apex (user picks preferred hostname in Cloudflare)
+https://www.concretecontractorskenosha.com/*  https://concretecontractorskenosha.com/:splat  301!
